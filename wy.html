@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html>
+ <!--   网站名称  --> 
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="Content-Language" content="zh-CN" />
+<title>VIP视频解析-VIP电影解析免费看_VIP电视剧追剧免费解析观看_VIP会员视频随时随地免费看</title>
+<meta name="keywords" content="解析,vip解析,视频解析,在线解析,vip视频解析,vip在线解析,vip会员视频解析,视频解析网站,会员视频解析,m3u8视频解析" />
+<meta name="description" content="VIP视频解析，一个长久稳定免费的VIP视频解析接口，支持全网VIP会员视频免费解析，优酷、爱奇艺、腾讯视频、哔哩哔哩、芒果TV、搜狐视频等VIP会员电影电视剧视频免费解析在线观看，支持MP4、M3U8、HLS、FLV视频解析播放，滑屏快进，双击全屏，视频旋转，倍速播放设置！" />
+  <link rel="https://www.logosc.cn/uploads/icon/2018/10/16/1720258d-3711-420e-a1e6-385cf219ecae.png" type="image/x-icon">
+
+  
+</head>
+<body>
+   <div class="container">
+ 
+  <div align="center">
+    <style>
+    *{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #efeeee;
+}
+  </style>
+  
+  
+  
+  <!-- 谚语颜色渐变动态展示关联提示颜色渐变走马灯 -->
+     
+<div class="spancolorBox" >
+   <span id="proverb" class="spancolor"></span></div>
+    <!-- 谚语颜色渐变动态展示关联提示颜色渐变走马灯 -->
+    <!-- 谚语颜色渐变动态展示关联提示颜色渐变走马灯js -->
+    <script>
+        var proverId = 0;
+        var proverbInfo = [
+          { info: "芭蕉不展丁香结,同向春风各自愁" },
+          { info: "明日复明日,明日何其多" },
+          { info: "时间在流逝,内心很纠结" },
+          { info: "长城之上是无尽的星空,星空之上是无尽的守望" },
+          { info: "一曲肝肠断,天涯何处觅知音" },
+          { info: "江南可采莲,莲叶何田田" },
+          { info: "纵情山河万里,肆意九州五岳" },
+          { info: "离开的那天天也下着雨,卡卡西还好吗" },
+          { info: "也许似乎大概是,然而未必不见得" },
+          { info: "破碎的身躯可以修复,友情也是如此吗" },
+          { info: "我不想喝酒,却想大醉一场" },
+          { info: "一个人可以被毁灭,但绝不能被打败" },
+          { info: "磨砺的不止锋芒,还有灵魂" },
+          { info: "能提起沉重剑刃的手,却握不住随风飘舞的花" },
+          { info: "心之所愿,剑之所向" },
+        ];
+        var proverbSpan = document.querySelector("#proverb");
+        proverbSpan.innerHTML = proverbInfo[proverId].info;
+        let timer = setInterval(() => {
+          proverId = proverId + 1;
+          if (proverId >= proverbInfo.length) {
+            proverId = 0;
+          }
+          proverbSpan.innerHTML = proverbInfo[proverId].info;
+        }, 4000);
+    </script>
+     <!-- 谚语颜色渐变动态展示关联提示颜色渐变走马灯js -->
+    
+     <!-- 谚语颜色渐变动态展示关联提示颜色渐变走马灯css -->
+    <style>
+        .spancolorBox {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex: 1;
+          flex-basis: 45%;
+          text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+          margin-bottom: 0px;
+        }
+        .spancolor {
+          font-size: 15px;
+          background: linear-gradient(to right, red, orange, yellow, green, cyan, blue, purple);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          animation: spancolorAni 5s linear infinite;
+        }
+      @keyframes spancolorAni {
+          0% {
+            filter: hue-rotate(0deg);
+          }
+          100% {
+            filter: hue-rotate(3600deg);
+          }
+        }
+  </style>
+    
+    
+    <style>
+    .spancolorBox{
+      width: 660px;
+      height: 20px;
+      border: none;
+      outline-style: none;
+      font-size: 15px;
+      color: #ff0000;
+      padding: 0 28px;
+      border-radius: 10px;
+      background: #ff0;
+   box-shadow: 18px 18px 30px rgba(0, 0, 0, 0.1),
+   -18px -18px 30px rgba(255, 255, 255, 1);
+   transition: all .24s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #efeeee;
+  transition: box-shadow .2s ease-in-out;
+    }
+
+.spancolorBox:hover{
+            box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.1),
+            0px 0px 0px rgba(255, 255, 255, 1),
+            inset 18px 18px 30px rgba(0, 0, 0, 0.1),
+            inset -18px -18px 30px rgba(255, 255, 255, 1);
+            transition: box-shadow .2s ease-out;
+        }
+      </style>
+   <!-- 谚语颜色渐变动态展示关联提示颜色渐变走马灯css -->
+  
+   <!--   播放器  -->
+      
+<iframe src="https://bd.jx.cn/?url=" id="player"  allowfullscreen="true" allowTransparency="true" frameborder="0" scrolling="no"></iframe>
+  <!--   删掉无法解析播放  -->
+ <script type="text/javascript">eval(function(p,a,c,k,e,d){e=function(c){return(c<a?"":e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--)d[e(c)]=k[c]||e(c);k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1};while(c--)if(k[c])p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return p}('b a(){0 6=1.2("9").4;0 5=1.2("3");0 3=1.2("3").c;0 8=5.e[3].4;0 7=1.2("f");7.d=8+6}',16,16,'var|document|getElementById|jk|value|jkurl|diz|cljurl|jkv|url|dihejk|function|selectedIndex|src|options|player'.split('|'),0,{}))</script>
+    <!--   播放器  -->
+    
+    <!--   播放器css  -->
+ <style>  
+  iframe {
+      width: 660px;
+      height: 400px;
+      border: none;
+      outline-style: none;
+      font-size: 50px;
+      color: #ff0000;
+      padding: 0 28px;
+      border-radius: 10px;
+      background: #ff0;
+   box-shadow: 18px 18px 30px rgba(0, 0, 0, 0.1),
+   -18px -18px 30px rgba(255, 255, 255, 1);
+   transition: all .24s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #efeeee;
+  transition: box-shadow .2s ease-in-out;
+    }
+
+iframe:hover{
+            box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.1),
+            0px 0px 0px rgba(255, 255, 255, 1),
+            inset 18px 18px 30px rgba(0, 0, 0, 0.1),
+            inset -18px -18px 30px rgba(255, 255, 255, 1);
+            transition: box-shadow .2s ease-out;
+        }
+   </style>
+  <!--   播放器css  -->
+  <!--   提示  -->
+        
+  <div class="spancolorBox" >
+   <marquee><span id="chakhsu" class="spancolor"> </span></marquee>
+</div>
+ <script> var chakhsu = function (r) {function t() {return b[Math.floor(Math.random() * b.length)]} function e() {return String.fromCharCode(94 * Math.random() + 33)} function n(r) {for (var n = document.createDocumentFragment(), i = 0; r > i; i++) { var l = document.createElement("span"); l.textContent = e(), l.style.color = t(), n.appendChild(l) } return n}function i() {var t = o[c.skillI]; c.step ? c.step-- : (c.step = g, c.prefixP < l.length ? (c.prefixP >= 0 && (c.text += l[c.prefixP]), c.prefixP++) : "forward" === c.direction ? c.skillP < t.length ? (c.text += t[c.skillP], c.skillP++) : c.delay ? c.delay-- : (c.direction = "backward", c.delay = a) : c.skillP > 0 ? (c.text = c.text.slice(0, -1), c.skillP--) : (c.skillI = (c.skillI + 1) % o.length, c.direction = "forward")), r.textContent = c.text, r.appendChild(n(c.prefixP < l.length ? Math.min(s, s + c.prefixP) : Math.min(s, t.length - c.skillP))), setTimeout(i, d) } /*以下内容自定义修改*/ var l = "", o = ["请勿相信视频播放中的广告" ].map(function (r) {return r + ""}), a = 2, g = 1, s = 5, d = 75, b = ["rgb(110,64,170)", "rgb(150,61,179)", "rgb(191,60,175)", "rgb(228,65,157)", "rgb(254,75,131)", "rgb(255,94,99)", "rgb(255,120,71)", "rgb(251,150,51)", "rgb(226,183,47)", "rgb(198,214,60)", "rgb(175,240,91)", "rgb(127,246,88)", "rgb(82,246,103)", "rgb(48,239,130)", "rgb(29,223,163)", "rgb(26,199,194)", "rgb(35,171,216)", "rgb(54,140,225)", "rgb(76,110,219)", "rgb(96,84,200)"], c = {text: "", prefixP: -s, skillI: 0, skillP: 0, direction: "forward", delay: a, step: g}; i() }; chakhsu(document.getElementById('chakhsu')); </script>
+  <!--   提示  -->
+    
+    
+<!--  接口 -->
+            
+    <select class="jiekou" id="jk" >
+<option  value="https://bd.jx.cn/?url=">【注意：若无法播放更换接口！】</option>
+
+<option  value="https://jx.nnxv.cn/tv.php?url=">七哥</option>
+<option  value="https://jx.playerjy.com/?url=">playerjy</option>
+<option  value="https://jx.m3u8.tv/jiexi/?url=">m3u8</option>
+<option  value="https://www.8090g.cn/?url=">8090g</option> 
+<option  value="https://jx.xmflv.com/?url=">虾米</option>
+<option  value="https://www.playm3u8.cn/jiexi.php?url=">playm3u8</option>
+<option  value="https://jx.77flv.cc/?url=">七七</option>
+<option  value="https://www.ckplayer.vip/jiexi/?url=">ckplayer</option>
+<option  value="https://jx.jiexila.com/?url=">解析La</option>
+<option  value="https://z1.im1907.top/?jx=">m1907【点击播放跳转，可搜名称】</option>
+<option  value="https://jx.yparse.com/index.php?url=">yparse【点击播放跳转，可搜名称】</option>
+<option  value="https://video.isyour.love/player/getplayer?url=">邦宁【点击播放跳转，可搜名称】</option>
+<option  value="https://s.myhkw.cn/newmk/">音乐</option>
+</select><br><br>
+    <!--  接口 -->
+    
+    <!--  接口css -->
+    <style>
+     select {
+      width: 600px;
+      height: 60px;
+      border: none;
+      outline-style: none;
+      font-size: 16px;
+      color: #000;
+      padding: 0 28px;
+      border-radius: 10px;
+      background: #F5F5F5;
+   box-shadow: 18px 18px 30px rgba(0, 0, 0, 0.1),
+   -18px -18px 30px rgba(255, 255, 255, 1);
+   transition: all .24s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #efeeee;
+  transition: box-shadow .2s ease-in-out;
+    }
+
+ .jiekou:hover{
+            box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.1),
+            0px 0px 0px rgba(255, 255, 255, 1),
+            inset 18px 18px 30px rgba(0, 0, 0, 0.1),
+            inset -18px -18px 30px rgba(255, 255, 255, 1);
+            transition: box-shadow .2s ease-out;
+        }
+    </style>
+ <!--  接口css -->
+  
+     <!--   输入 -->
+  
+<label><input type="search" placeholder="输入视频地址，点击解析播放（支持优酷、爱奇艺、腾讯视频、哔哩哔哩、芒果TV等平台视频）" title="复制视频地址，粘贴到此处点击解析播放" id="url" name="word"></label><br><br>
+<!--   输入 -->
+    
+    <!--   输入css -->
+<style>
+    input {
+      width: 600px;
+      height: 60px;
+      border: none;
+      outline-style: none;
+      font-size: 16px;
+      color: #000;
+      padding: 0 28px;
+      border-radius: 10px;
+      background: #F5F5F5;
+   box-shadow: 18px 18px 30px rgba(0, 0, 0, 0.1),
+   -18px -18px 30px rgba(255, 255, 255, 1);
+   transition: all .24s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #efeeee;
+  transition: box-shadow .2s ease-in-out;
+    }
+
+input:hover{
+            box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.1),
+            0px 0px 0px rgba(255, 255, 255, 1),
+            inset 18px 18px 30px rgba(0, 0, 0, 0.1),
+            inset -18px -18px 30px rgba(255, 255, 255, 1);
+            transition: box-shadow .2s ease-out;
+        }
+    
+</style>
+  <!--   输入css -->
+    
+    <!--   解析播放  -->
+    <button class="btn32" id="bf" type="button" onclick="dihejk()">解析播放<hr></button>
+    <!--   解析播放  -->
+    
+<!--   解析播放css  -->
+    <style>
+        button {
+      width: 380px;
+      height: 90px;
+      border: none;
+      outline-style: none;
+      font-size: 50px;
+      color: #ff0000;
+      padding: 0 28px;
+      border-radius: 10px;
+      background: #F5F5F5;
+   box-shadow: 18px 18px 30px rgba(0, 0, 0, 0.1),
+   -18px -18px 30px rgba(255, 255, 255, 1);
+   transition: all .24s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #efeeee;
+  transition: box-shadow .2s ease-in-out;
+    }
+
+button:hover{
+            box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.1),
+            0px 0px 0px rgba(255, 255, 255, 1),
+            inset 18px 18px 30px rgba(0, 0, 0, 0.1),
+            inset -18px -18px 30px rgba(255, 255, 255, 1);
+            transition: box-shadow .2s ease-out;
+        }
+        
+        
+    </style>
+  <!--   解析播放css  -->
+    
+   
+  
+<!--视频网站-->
+    <div class="container">
+        <div class="box">
+            <div class="img">
+                <a href="http://www.pptv.com/"  target="_blank"/ >
+                <img src="https://www.vimon.cc/tools/vip/images/pptv.png" title="皮皮视频"/>
+           </a>  </div>
+            <a>PP视频</a>
+        </div>
+        <div class="box">
+            <div class="img">
+              <a href="http://www.baofeng.com/" target="_blank" / >
+                <img src="https://www.vimon.cc/tools/vip/images/baofeng.png" title="暴风影音"/>
+              </a>   </div>
+           <a>暴风影音</a>
+        </div>
+        <div class="box">
+            <div class="img">
+              <a href="http://www.youku.com/"target="_blank"/ >
+                <img src="https://www.vimon.cc/tools/vip/images/youkulogo.png"title="优酷视频" />
+            </a> </div>
+            <a>优酷视频</a>
+        </div>
+        <div class="box">
+            <div class="img">
+              <a href="https://tv.sohu.com/" target="_blank"/ >
+                <img src="https://www.vimon.cc/tools/vip/images/sohulogo.png"title="搜狐视频" />
+           </a>  </div>
+            <a>搜狐视频</a>
+        </div>
+        <div class="box">
+            <div class="img">
+              <a href="http://v.qq.com/"  target="_blank"/ >
+                <img src="https://www.vimon.cc/tools/vip/images/qqlogo.png"title="腾讯视频" />
+           </a>  </div>
+            <a>腾讯视频</a>
+        </div><br>
+  
+        <div class="box">
+            <div class="img">
+              <a href="http://www.fun.tv/" target="_blank" / >
+                <img src="https://www.vimon.cc/tools/vip/images/fengxing.png"title="风行视频" / >
+         </a>  </div>
+            <a>风行视频</a>
+        </div>
+          <div class="box">
+            <div class="img">
+              <a href="http://www.mgtv.com/" target="_blank"/ >
+               <img src="https://www.vimon.cc/tools/vip/images/hunantvlogo.png"title="芒果视频" />
+                </a>  </div>
+            <a>芒果视频</a>
+            </div> 
+      
+      
+ <!--最后三个-->
+        <div class="box">
+            <div class="img">
+              <a href="http://www.le.com/" target="_blank"/>
+                <img src="https://www.vimon.cc/tools/vip/images/letvlogo.png" title="乐视视频" />
+            </div>
+            <a>乐视视频</a>
+        </div>
+        <div class="box">
+            <div class="img">
+                <a href="http://www.iqiyi.com/"  target="_blank" />
+                <img src="https://www.vimon.cc/tools/vip/images/iqiyilogo.png" title="奇异视频"/>
+            </div>
+           <a>奇异视频</a>
+        </div>
+        <div class="box">
+            <div class="img">
+              <a href="https://www.bilibili.com/"  target="_blank" /> 
+                <img src="https://www.vimon.cc/tools/vip/images/bilibili.png" title="哔哩视频"/ >
+         </div>
+           <a>哔哩视频</a>
+        </div>
+      <!--视频网站-->
+      
+      <!--视频解析操作指南-->
+ 
+
+ 
+            <div class="gg">
+        
+              <h3><img src="https://360zy.com/template/360zy.com/picture/new.gif">视频解析指南<br>
+                <img src="https://360zy.com/template/360zy.com/picture/new.gif">第一步：进入各大视频网站，找到想要观看的VIP视频（例如：腾讯、爱奇艺、优酷、乐视、芒果、搜狐等），然后复制完整的视频链接(浏览器上地址栏的视频链接）。<hr><img src="https://360zy.com/template/360zy.com/picture/new.gif">第二步：将复制的视频链接粘贴到播放地址栏，并点击“解析播放”。
+               <hr> <img src="https://360zy.com/template/360zy.com/picture/new.gif">第三步：等待解析完成，即可免费观看VIP视频。
+             <hr> <img src="https://360zy.com/template/360zy.com/picture/new.gif">第四步：注意事项：全网VIP视频免费看，若遇到不能播放，确保视频地址无误后，请更换“播放线路”再次点击“解析播放”即可。
+ <hr> <hr><hr><hr><hr>  <img src="https://360zy.com/template/360zy.com/picture/new.gif">声明：本站为非盈利性站点，仅供WEB在线展示学习交流，拒绝一切商业行为，否者后果自负！所涉及资源均来源于互联网，本站不提供任何视频资源存储，也不参与录制和上传。若无意侵犯了您的权利，请与我们取得联系，我们会第一时间核实和处理，谢谢！          
+              </h3>
+ </div>  
+      <!--视频解析指南--> 
+  
+          
+<!--视频解析指南css--> 
+         <style>
+              .gg{
+                   width: 600px;
+                   height: 400px;
+                   border: none;
+                   outline-style: none;
+                   font-size: 14px;
+                   color: #ff0000;
+                   padding: 0 28px;
+                   border-radius: 10px;
+                   background: #ff0;
+                box-shadow: 18px 18px 30px rgba(0, 0, 0, 0.1),
+                -18px -18px 30px rgba(255, 255, 255, 1);
+                transition: all .24s ease-in-out;
+               display: flex;
+               align-items: center;
+               justify-content: center;
+               background-color: #efeeee;
+               transition: box-shadow .2s ease-in-out;
+                 }
+             
+             .gg:hover{
+                         box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.1),
+                         0px 0px 0px rgba(255, 255, 255, 1),
+                         inset 18px 18px 30px rgba(0, 0, 0, 0.1),
+                         inset -18px -18px 30px rgba(255, 255, 255, 1);
+                         transition: box-shadow .2s ease-out;
+                     }
+          </style>
+<!--视频解析指南css--> 
+        
+ 
+
+        <!--视频解析指南颜色渐变css-->   
+         <style>
+   /* 加上 -webkit- 注意兼容 */
+        h3{
+            background: -webkit-linear-gradient(135deg,
+                    #0eaf6d,
+                    #ff6ac6 25%,
+                    #147b96 50%,
+                    #e6d205 55%,
+                    #2cc4e0 60%,
+                    #8b2ce0 80%,
+                    #ff6384 95%,
+                    #08dfb4);
+            /* 文字颜色填充设置为透明 */
+            -webkit-text-fill-color: transparent;
+            /* 背景裁剪，即让文字使用背景色 */
+            -webkit-background-clip: text;
+            /* 背景图放大一下，看着柔和一些 */
+            -webkit-background-size: 200% 100%;
+            /* 应用动画flowCss 速度 无限循环 线性匀速动画*/
+            -webkit-animation: flowCss 10s infinite linear;
+        }
+
+        @-webkit-keyframes flowCss {
+            0% {
+                /* 移动背景位置 */
+                background-position: 0 0;
+            }
+
+            100% {
+                background-position: -400% 0;
+            }
+        }
+
+        h1:hover {
+            -webkit-animation: flowCss 4s infinite linear;
+        }
+    </style>      
+     <!--视频解析指南颜色渐变css-->   
+      
+      
+   
+        <!--视频网站-->
+  <div class="container">
+      
+        <div class="box">
+            <div class="img">
+                <a href="链接"/>
+                <img src="https://yhzy.cc/template/ziyuan2/images/hot.gif"target="_blank" title="名称1"/>
+                </div>
+            <a>名称</a>
+       </div>
+        <div class="box">
+            <div class="img">
+              <a href="链接"/ >
+                <img src="https://yhzy.cc/template/ziyuan2/images/hot.gif" target="_blank"title="名称1"/>
+        </a> </div>
+           <a>名称</a>
+       </div>
+        <div class="box">
+            <div class="img">
+              <a href="链接/"/ >
+                <img src="https://yhzy.cc/template/ziyuan2/images/hot.gif"target="_blank"title="名称1" />
+           </a> </div>
+            <a>名称</a>
+        </div>
+        <div class="box">
+            <div class="img">
+              <a href="链接"/ >
+                <img src="https://yhzy.cc/template/ziyuan2/images/hot.gif"target="_blank"title="名称1" />
+           </a></div>
+            <a>名称</a>
+        </div>
+        <div class="box">
+            <div class="img">
+              <a href="链接"  / >
+                <img src="https://yhzy.cc/template/ziyuan2/images/hot.gif"target="_blank"title="名称1" />
+        </a> </div>
+            <a>名称</a>
+        </div>
+  
+        <div class="box">
+            <div class="img">
+              <a href="链接"  / >
+                <img src="https://yhzy.cc/template/ziyuan2/images/hot.gif"target="_blank"title="名称1" / >
+        </a></div>
+            <a>名称</a>
+        </div>
+          <div class="box">
+            <div class="img">
+              <a href="链接" / >
+               <img src="https://yhzy.cc/template/ziyuan2/images/hot.gif"target="_blank"title="名称1" />
+               </a>  </div>
+            <a>名称</a>
+            </div>    
+ <!--最后三个-->
+        <div class="box">
+            <div class="img">
+              <a href="链接" />
+                <img src="https://yhzy.cc/template/ziyuan2/images/hot.gif"target="_blank" title="名称1" />
+            </div>
+            <a>名称</a>
+        </div>
+        <div class="box">
+            <div class="img">
+                <a href="链接"  />
+                <img src="https://yhzy.cc/template/ziyuan2/images/hot.gif"target="_blank" title="名称1"/>
+            </div>
+           <a>名称</a>
+        </div>
+        <div class="box">
+            <div class="img">
+              <a href="链接"   /> 
+                <img src="https://yhzy.cc/template/ziyuan2/images/hot.gif"target="_blank" title="名称1"/ >
+         </div>
+           <a>名称</a>
+        </div>
+     
+        <div class="gg">
+          <img src="https://yhzy.cc/template/ziyuan2/images/hot.gif"> 
+                
+        </div>
+       
+		</div>
+         
+        </div></div></div>
+  <!--视频网站-->
+  
+  <!--视频网站css-->
+    <style> 
+
+.container{
+    width: 700px;
+    height: 600px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.container .box{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+  
+    align-content: center;
+    width: 100px;
+    height: 140px;
+    margin: 20px;
+}
+.container .box .img{
+    width: 100px;
+    height: 100px;
+    box-shadow: 18px 18px 30px rgba(0, 0, 0, 0.1),
+    -18px -18px 30px rgba(255, 255, 255, 1);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #efeeee;
+    transition: box-shadow .2s ease-out;
+    position: relative;
+}
+.container .box .img  img{
+    width: 60px;
+    transition: width 0.2s ease-out;
+}
+
+.container .box .img:hover{
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.2),
+    0px 0px 0px rgba(255, 255, 255, 0.8),
+    inset 18px 18px 30px rgba(0, 0, 0, 0.1),
+    inset -18px -18px 30px rgba(255, 255, 255, 1);
+    transition: box-shadow .2s ease-out;
+}
+.container .box .img:hover img{
+    width: 50px;
+    transition: width 0.2s ease-out;
+}
+.container .box p{
+    color: slategrey;
+  
+}
+</style> 
+   <!--视频网站css-->
+    
+    
+    
+    
+       <!--   鼠标移动星星拖尾特效  -->   
+    <span class="js-cursor-container"></span>
+    <script>
+        (function fairyDustCursor() {
+ 
+            var possibleColors = ["#D61C59", "#E7D84B", "#1B8798"]
+            var width = window.innerWidth;
+            var height = window.innerHeight;
+            var cursor = { x: width / 2, y: width / 2 };
+            var particles = [];
+ 
+            function init() {
+                bindEvents();
+                loop();
+            }
+ 
+            // Bind events that are needed
+            function bindEvents() {
+                document.addEventListener('mousemove', onMouseMove);
+                window.addEventListener('resize', onWindowResize);
+            }
+ 
+            function onWindowResize(e) {
+                width = window.innerWidth;
+                height = window.innerHeight;
+            }
+ 
+            function onMouseMove(e) {
+                cursor.x = e.clientX;
+                cursor.y = e.clientY;
+ 
+                addParticle(cursor.x, cursor.y, possibleColors[Math.floor(Math.random() * possibleColors.length)]);
+            }
+ 
+            function addParticle(x, y, color) {
+                var particle = new Particle();
+                particle.init(x, y, color);
+                particles.push(particle);
+            }
+ 
+            function updateParticles() {
+ 
+                // Updated
+                for (var i = 0; i < particles.length; i++) {
+                    particles[i].update();
+                }
+ 
+                // Remove dead particles
+                for (var i = particles.length - 1; i >= 0; i--) {
+                    if (particles[i].lifeSpan < 0) {
+                        particles[i].die();
+                        particles.splice(i, 1);
+                    }
+                }
+ 
+            }
+ 
+            function loop() {
+                requestAnimationFrame(loop);
+                updateParticles();
+            }
+ 
+            /**
+             * Particles
+             */
+ 
+            function Particle() {
+ 
+                this.character = "*";
+                this.lifeSpan = 120; //ms
+                this.initialStyles = {
+                    "position": "fixed",
+                    "display": "inline-block",
+                    "top": "0px",
+                    "left": "0px",
+                    "pointerEvents": "none",
+                    "touch-action": "none",
+                    "z-index": "10000000",
+                    "fontSize": "25px",
+                    "will-change": "transform"
+                };
+ 
+                // Init, and set properties
+                this.init = function (x, y, color) {
+ 
+                    this.velocity = {
+                        x: (Math.random() < 0.5 ? -1 : 1) * (Math.random() / 2),
+                        y: 1
+                    };
+ 
+                    this.position = { x: x + 10, y: y + 10 };
+                    this.initialStyles.color = color;
+ 
+                    this.element = document.createElement('span');
+                    this.element.innerHTML = this.character;
+                    applyProperties(this.element, this.initialStyles);
+                    this.update();
+ 
+                    document.querySelector('.js-cursor-container').appendChild(this.element);
+                };
+ 
+                this.update = function () {
+                    this.position.x += this.velocity.x;
+                    this.position.y += this.velocity.y;
+                    this.lifeSpan--;
+ 
+                    this.element.style.transform = "translate3d(" + this.position.x + "px," + this.position.y + "px, 0) scale(" + (this.lifeSpan / 120) + ")";
+                }
+ 
+                this.die = function () {
+                    this.element.parentNode.removeChild(this.element);
+                }
+ 
+            }
+ 
+            /**
+             * Utils
+             */
+ 
+            // Applies css `properties` to an element.
+            function applyProperties(target, properties) {
+                for (var key in properties) {
+                    target.style[key] = properties[key];
+                }
+            }
+ 
+            if (!('ontouchstart' in window || navigator.msMaxTouchPoints)) init();
+        })();    
+    </script>
+ <!--   蛛网背景特效  -->   
+<script>
+	!function () {
+    function n(n, e, t) {
+        return n.getAttribute(e) || t
+    }
+ 
+    function e(n) {
+        return document.getElementsByTagName(n)
+    }
+ 
+    function t() {
+        var t = e("script"), o = t.length, i = t[o - 1];
+        return {l: o, z: n(i, "zIndex", -1), o: n(i, "opacity", .5), c: n(i, "color", "0,0,0"), n: n(i, "count", 99)}
+    }
+ 
+    function o() {
+        a = m.width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth, c = m.height = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight
+    }
+ 
+    function i() {
+        r.clearRect(0, 0, a, c);
+        var n, e, t, o, m, l;
+        s.forEach(function (i, x) {
+            for (i.x += i.xa, i.y += i.ya, i.xa *= i.x > a || i.x < 0 ? -1 : 1, i.ya *= i.y > c || i.y < 0 ? -1 : 1, r.fillRect(i.x - .5, i.y - .5, 1, 1), e = x + 1; e < u.length; e++) n = u[e], null !== n.x && null !== n.y && (o = i.x - n.x, m = i.y - n.y, l = o * o + m * m, l < n.max && (n === y && l >= n.max / 2 && (i.x -= .03 * o, i.y -= .03 * m), t = (n.max - l) / n.max, r.beginPath(), r.lineWidth = t / 2, r.strokeStyle = "rgba(" + d.c + "," + (t + .2) + ")", r.moveTo(i.x, i.y), r.lineTo(n.x, n.y), r.stroke()))
+        }), x(i)
+    }
+ 
+    var a, c, u, m = document.createElement("canvas"), d = t(), l = "c_n" + d.l, r = m.getContext("2d"),
+        x = window.requestAnimationFrame || window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame || window.oRequestAnimationFrame || window.msRequestAnimationFrame || function (n) {
+            window.setTimeout(n, 1e3 / 45)
+        }, w = Math.random, y = {x: null, y: null, max: 2e4};
+    m.id = l, m.style.cssText = "position:fixed;top:0;left:0;z-index:" + d.z + ";opacity:" + d.o, e("body")[0].appendChild(m), o(), window.onresize = o, window.onmousemove = function (n) {
+        n = n || window.event, y.x = n.clientX, y.y = n.clientY
+    }, window.onmouseout = function () {
+        y.x = null, y.y = null
+    };
+    for (var s = [], f = 0; d.n > f; f++) {
+        var h = w() * a, g = w() * c, v = 2 * w() - 1, p = 2 * w() - 1;
+        s.push({x: h, y: g, xa: v, ya: p, max: 6e3})
+    }
+    u = s.concat([y]), setTimeout(function () {
+        i()
+    }, 100)
+}();
+</script>
+      
+      
+      
+        
+</body>
+</html>
